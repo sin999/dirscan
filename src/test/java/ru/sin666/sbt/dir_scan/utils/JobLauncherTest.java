@@ -13,11 +13,12 @@ import static org.junit.Assert.assertEquals;
 
 public class JobLauncherTest {
 
+    private String ls = System.getProperty("line.separator");
     private final double CONFIDENCE_INTERVAL = 0.9;
     private final int EXPECTED_CALLS = 3;
     private final long INTERVAL = 100;
     private long delayInterval;
-    private final String EXPECTED_STRING = ".\n.\n.\n";
+    private final String EXPECTED_STRING = "."+ls+"."+ls+"."+ls;
 
 
     private JobLauncher jobLauncher;
